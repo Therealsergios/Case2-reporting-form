@@ -82,6 +82,8 @@
 
 ### В рамках работы с данными были подготовлены SQL запрос для получения данных по объектам и ER диаграмма сущностей для визуализации логической модели данных
 
-- Cформированный [SQL запрос]()
-- Итоговая [таблица]() с полученными данными в рамках выполненного запроса
-- Подготовленная [ER диаграмма]() сущностей
+- Cформированный [SQL запрос](https://github.com/Therealsergios/Case2-reporting-form/blob/main/data/request.sql)
+- Итоговая [Таблица](https://github.com/Therealsergios/Case2-reporting-form/blob/main/data/table.md) с полученными данными в рамках выполненного запроса
+- Подготовленная ER диаграмма
+
+![ER диаграмма](https://github.com/Therealsergios/Case2-reporting-form/blob/main/data/ER%20diagram.png) сущностей

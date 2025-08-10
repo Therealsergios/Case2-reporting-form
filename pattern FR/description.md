@@ -1,6 +1,6 @@
 ## Шаблон FastReport
 ### Титульная страница
-![Титул]()
+![Титул](https://github.com/Therealsergios/Case2-reporting-form/blob/main/pattern%20FR/title.png)
 
 Данные по подписантам формируются исходя из запросов:
 - подписанты / Таблица Positions
@@ -46,7 +46,7 @@ WHERE plant_name = 'u-kat-rif 1000' - установка заданная пол
 'SINH'- dept_num-case when pmp_id between 1 and 940 then 'MO' else EO end as object_kod-EXTRACT(MONTH FROM CURRENT_DATE)-(EXTRACT(YEAR FROM CURRENT_DATE)
 ```
 ### Содержание
-![Содержание]()
+![Содержание](https://github.com/Therealsergios/Case2-reporting-form/blob/main/pattern%20FR/contents.png)
 
 Данные в содержании формируются исходя из запросов:
 - наименование
@@ -66,7 +66,7 @@ WHERE dept_num = '4'
       AND plant_name = 'u-kat-rif 1000'
 ```
 ### Норма
-![Норма]()
+![Норма](https://github.com/Therealsergios/Case2-reporting-form/blob/main/pattern%20FR/norma.png)
 
 Данные в норме формируются исходя из [запроса]()
 <!-- Таблица 1 -->
@@ -122,7 +122,7 @@ WHERE dept_num = '4'
 </table>
 
 ### Обоснование
-![Обоснование]()
+![Обоснование](https://github.com/Therealsergios/Case2-reporting-form/blob/main/pattern%20FR/docs.png)
 
 Данные по нормативно-технической документации формируются из:
 - документация
