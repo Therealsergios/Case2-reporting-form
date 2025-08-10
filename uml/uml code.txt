@@ -1,0 +1,48 @@
+@startuml
+actor Пользователь
+participant "Отчетный модуль\n(FastReport)" as FastReport
+participant "Система учета объектов" as ObjectsSystem
+participant "Система нормирования" as NormSystem
+participant "Система учета ЗИП\nпо объектам" as ZIPSystem
+participant "Система оповещения" as NotifySystem
+
+== Инициирование запроса ==
+Пользователь -> FastReport : Запрос на создание отчетной формы\n(ввод данных о Подразделении)
+activate FastReport
+
+== Получение объектов ==
+FastReport -> ObjectsSystem : Запрос перечня объектов Подразделения
+activate ObjectsSystem
+ObjectsSystem --> FastReport : Перечень объектов (XML)
+deactivate ObjectsSystem
+
+== Получение правил нормирования ==
+FastReport -> NormSystem : Запрос правил для объектов
+activate NormSystem
+NormSystem --> FastReport : Перечень правил с объектами (XML)
+deactivate NormSystem
+
+== Получение информации о ЗИП ==
+FastReport -> ZIPSystem : Запрос по объектам с правилами
+activate ZIPSystem
+ZIPSystem --> FastReport : Перечень элементов объектов и их количество (XML)
+deactivate ZIPSystem
+
+== Расчет по правилам нормирования ==
+FastReport -> NormSystem : Запрос расчетов по нормам\n(элементы и их количество)
+activate NormSystem
+NormSystem --> FastReport : Результаты расчетов
+deactivate NormSystem
+
+== Формирование отчета ==
+FastReport -> FastReport : Формирование отчета по шаблону (FastReport, pdf)
+
+== Отправка отчета пользователю ==
+FastReport -> NotifySystem : Отправка отчета с данными пользователя (корпоративный email)
+activate NotifySystem
+NotifySystem -> Пользователь : Отчет
+deactivate NotifySystem
+
+deactivate FastReport
+
+@enduml
