@@ -84,6 +84,6 @@
 
 - Cформированный [SQL запрос](https://github.com/Therealsergios/Case2-reporting-form/blob/main/data/request.sql)
 - Итоговая [Таблица](https://github.com/Therealsergios/Case2-reporting-form/blob/main/data/table.md) с полученными данными в рамках выполненного запроса
-- Подготовленная ER диаграмма
+- Подготовленная ER диаграмма сущностей
 
-![ER диаграмма](https://github.com/Therealsergios/Case2-reporting-form/blob/main/data/ERD.png) сущностей
+![ER диаграмма](https://github.com/Therealsergios/Case2-reporting-form/blob/main/data/ERD.png)
