@@ -86,4 +86,4 @@
 - Итоговая [Таблица](https://github.com/Therealsergios/Case2-reporting-form/blob/main/data/table.md) с полученными данными в рамках выполненного запроса
 - Подготовленная ER диаграмма
 
-![ER диаграмма](https://github.com/Therealsergios/Case2-reporting-form/blob/main/data/ER%20diagram.png) сущностей
+![ER диаграмма](https://github.com/Therealsergios/Case2-reporting-form/blob/main/data/ERD.png) сущностей
